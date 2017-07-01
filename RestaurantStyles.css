@@ -1,6 +1,7 @@
 header {
     text-align: center;
-    font-size: 30px
+    font-size: 30px;
+    font-family: consolas;
 }
 
 footer {
@@ -12,6 +13,13 @@ a {
     font-size: 25px;
 }
 
-header{
-    font-family: consolas;
+a:visited{
+    color:red;
+}
+a:hover{
+    font-weight: bold;
+}
+a:active{
+    text-decoration: none;
+    color: green;
 }
