@@ -2,6 +2,10 @@
 <html>
     <head>
         <title>Coding your appetite - Contact Us</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	    <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link href="RestaurantStyles.css" rel="stylesheet" type="text/css">
         <style>
             body {
@@ -9,55 +13,66 @@
                 background-size: cover;
                 background-position: center center;
                 background-repeat: no-repeat;
-        } 
-
-        form{
-            size: 500px;
-            font-weight:bold;
-        }
+            }
+            form{
+                size: 500px;
+                font-weight:bold;
+            }
         </style>
     </head>
     <body>
         <header>
-            <h1>Coding your appetite</h1><hr/><br/>
+            <div class="container">   
+                <div class="jumbotron">
+                    <h1>Coding Your Appetite</h1>
+                    <p style="color:red">Grand Opening scheduled for ONE WEEK from today!!!</p>
+                </div>
+            </div>
         </header>
-        <a href="Index.html">Home</a>&nbsp&nbsp
-        <a href="Menu.html">Menu</a>&nbsp&nbsp
-        <a href="Contact.html">Contact Us</a>
-        <br/><br/>
-        <hr/>
         <center>
-        <form action="#" method="post">
-            Name: <input type="text" name="Name"/><br/><br/>
-            Email: <input type="text" name="Email"/><br/><br/>
-            Phone: <input type="text" name="Phone"/><br/><br/>
-            Reason for Inquiry:
-            <select name="InquiryReason">
-                <option value="Catering">Catering</option>
-                <option value="PrivateParty">Private Party</option>
-                <option value="Feedback">Feedback</option>
-                <option value="Other">Other</option>
-            </select>
-            <br/><br/>
-            Additional information:
-            <textarea name="Additionalinformation" rows="6"></textarea><br/><br/>
-            Have you been to the restaurant?
-            <input type="radio" name="Previousvisit" value="No"checked/>No
-            <input type="radio" name="Previousvisit" value="Yes"/>Yes
-            <br/><br/>
-            Best days to contact you:
-            <input type="checkbox" name="contactM" value="M"/>M
-            <input type="checkbox" name="contactT" value="T"/>T
-            <input type="checkbox" name="contactW" value="W"/>W
-            <input type="checkbox" name="contactTh" value="Th"/>Th
-            <input type="checkbox" name="contactF" value="F"/>F
-            <br/><br/>
-            <input type="Submit" value = "Send Request"/>
-        </form>
+        <div class="container-fluid">
+                    <a class="btn btn-default" href="Index.html" role="button">
+                        <span class="glyphicon glyphicon-home"></span></a>
+                    <a class="btn btn-default" href="Menu.html" role="button">Menu</a>
+                    <a class="btn btn-default" href="Contact.html" role="button">Contact Us</a>
+        </div>
+        <hr/>
+            <div class="container">
+                <form action="#" method="post">
+                    Name: <input type="text" name="Name"/><br/><br/>
+                    Email: <input type="text" name="Email"/><br/><br/>
+                    Phone: <input type="text" name="Phone"/><br/><br/>
+                    Reason for Inquiry:
+                    <select name="InquiryReason">
+                        <option value="Catering">Catering</option>
+                        <option value="PrivateParty">Private Party</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br/><br/>
+                    Additional information:
+                    <textarea name="Additionalinformation" rows="6"></textarea><br/><br/>
+                    Have you been to the restaurant?
+                    <input type="radio" name="Previousvisit" value="No"checked/>No
+                    <input type="radio" name="Previousvisit" value="Yes"/>Yes
+                    <br/><br/>
+                    Best days to contact you:
+                    <input type="checkbox" name="contactM" value="M"/>M
+                    <input type="checkbox" name="contactT" value="T"/>T
+                    <input type="checkbox" name="contactW" value="W"/>W
+                    <input type="checkbox" name="contactTh" value="Th"/>Th
+                    <input type="checkbox" name="contactF" value="F"/>F
+                    <br/><br/>
+                    <input type="Submit" value = "Send Request"/>
+                </form>
+            </div>
         </center>
         <footer>
             <hr/>
             111 Elm Street, Boston, Massachusettes 02213<br/>617-665-8856
         </footer>
+    	<!-- Latest compiled and minified JavaScript -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 </html>
